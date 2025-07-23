@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin:0;
+            padding:20px;
+        }
+        h1{
+            margin-bottom: 40px;
+            color: rgb(169, 11, 11);
+        }
+        .gallery{
+            display:flex;
+            justify-content: center;
+            gap:30px;
+            flex-wrap: wrap;
+        }
+        section{
+            padding:15px;
+        }
+        a{
+            color:black;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        a:hover{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Gallery</h1>
+
+    <div class="gallery">
+        <section>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flag_of_Bangladesh.svg/250px-Flag_of_Bangladesh.svg.png" target="_blank" alt="Bangladesh Flag">
+            <a href="https://en.wikipedia.org/wiki/Bangladesh">Bangladesh</a>
+        </section>
+
+        <section>
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/250px-Flag_of_India.svg.png" target="_blabk" alt="India Flag">
+            <a href="https://en.wikipedia.org/wiki/India">India</a>
+        </section>
+
+        <section>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Flag_of_Maldives.svg/250px-Flag_of_Maldives.svg.png" target="_blank" alt="Maldives Flag">
+            <a href="https://en.wikipedia.org/wiki/Maldives">Maldives</a>
+        </section>
+    </div>
+</body>
+</html>
