@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
+
+<script>
+  const library = {
+    books : [
+      { title: "The Hobbit", author:"J.R.R. Tolkien", year: 1937}
+    ],
+    addBook(book){
+      const {title, author, year} = book;
+      if(!title || !author || !year){
+        console.log("Book information is incomplete.")
+        return;
+      }
+      const exists = this.books.some(b => b.title === title);
+      if(exists){
+        console.log(`Book title "${title}" already exists.`)
+        return;
+      }
+      this.books.push({title, author, year});
+      console.log(`Book "${title}" added successfully`)
+    },
+    findBookByTitle(title){
+      const found = this.books.find(book => book.title === title);
+      if(!found){
+        console.log(`Book titled "${title}" not found.`)
+        return null;
+      }
+      return found;
+    },
+    removeBook(title){
+      const index = this.books.findIndex(book => book.title === title);
+      if(index !== -1){
+        const removed = this.books.splice(index, 1)[0];
+        console.log(`Book titled "${removed.title}" removed.`);
+      }else{
+        console.log(`Cannot remove. Book titled "${title} " not found`)
+      }
+    }
+  }
+
+
+  library.addBook({title:"George Orwell", year:1949});
+  library.addBook({title: "1984", author:"George Orwell", year:1949})
+  library.addBook({title:"1984", author:"George Orwell", year:1949})
+
+  console.log(library.findBookByTitle("1984"))
+  library.removeBook("1984")
+  
+  console.log(library.findBookByTitle("1984"))
+  console.log("Total Books: ", library.books.length)
+
+</script>
