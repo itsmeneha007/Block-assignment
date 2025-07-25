@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Design a webpage </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, adipisci?</p>
+    <div id="block-element">
+        Block Element
+    </div>
+
+    <span id="inline-element">Inline Element</span>
+    <div id="inline-block-element">Inline-Block Element</div>
+
+    <div id="hidden-element">Hidden Element</div>
+
+    <button onclick="toggleVisibility()">Toggle Hidden Element</button>
+</body>
+</html>
+<script>
+    function toggleVisibility(){
+        const hidden = document.getElementById("hidden-element")
+
+        hidden.style.display = hidden.style.display === "none" ? "block" : "none";
+        
+    }
+</script>
