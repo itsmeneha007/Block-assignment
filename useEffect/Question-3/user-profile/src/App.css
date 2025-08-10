@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.app {
+  text-align: center;
+  padding: 20px;
+}
+
+.search-input {
+  padding: 8px;
+  width: 250px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 50px;
+  color: #007bff;
+}
+
+.error {
+  text-align: center;
+  margin-top: 50px;
+  color: red;
+}
