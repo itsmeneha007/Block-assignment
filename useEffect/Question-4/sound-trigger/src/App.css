@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+.app {
+  text-align: center;
+  padding: 50px;
+}
+
+.timer {
+  font-size: 3rem;
+  margin: 20px 0;
+  color: #333;
+}
+
+.controls button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #0077cc;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.controls button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.target-input {
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.target-input input {
+  padding: 5px;
+  margin-left: 10px;
+  width: 60px;
+}
